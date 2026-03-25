@@ -102,3 +102,35 @@ KrishiMitra helps farmers with:
 ---
 
 ## 🌿 Branch History (`feature1`)
+
+
+---
+
+## ⚙️ Tech Stack
+
+### Backend
+- FastAPI
+- Python
+- Groq API
+- Vision Model Integration
+
+### Frontend
+- React (Vite)
+- Web Speech API
+- Context API
+
+---
+
+## 💻 Local Development
+
+### 🔧 Backend
+
+```bash
+cd backend
+python -m venv .venv
+
+# Activate (Windows PowerShell)
+.\.venv\Scripts\Activate.ps1
+
+pip install -r requirements.txt
+uvicorn app.main:app --reload
