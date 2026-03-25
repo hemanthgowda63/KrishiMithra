@@ -134,3 +134,60 @@ python -m venv .venv
 
 pip install -r requirements.txt
 uvicorn app.main:app --reload
+
+
+🎨 Frontend
+cd frontend
+npm install
+npm run dev
+⚠️ Notes & Limitations
+Voice features depend on:
+Browser support (Chrome/Edge recommended)
+Microphone & speaker permissions
+Browser TTS works without API key
+Manual testing required for cross-browser validation
+✅ Verification Checklist
+🔐 Login → Check one-time greeting
+🎤 Chatbot → Speak → Message auto-sent
+🔊 Voice ON → Bot response spoken
+🔇 Voice OFF → No speech output
+📁 Project Structure
+krishimitra/
+├── backend/
+│   ├── app/
+│   │   ├── config.py
+│   │   ├── main.py
+│   │   ├── routes/
+│   │   └── services/
+│   └── tests/
+│
+├── frontend/
+│   ├── src/
+│   │   ├── pages/
+│   │   └── context/
+│   └── ...
+│
+└── README.md
+🚧 Future Improvements
+🌐 Cross-browser voice testing
+📱 Mobile optimization
+📊 Advanced analytics dashboard
+🔌 Optional external integrations
+📌 Summary
+
+KrishiMitra is a modern agri-assistant platform combining:
+
+AI-powered chatbot 🤖
+Vision-based crop analysis 🌿
+Voice interaction 🎙️
+Secure authentication 🔐
+
+Designed for scalability, usability, and real-world farmer support.
+
+
+---
+
+If you want next level 🔥:
+- I can add **GitHub badges (build, license, tech stack)**  
+- Add **screenshots section (very important for hackathons)**  
+- Or make it **top 1% professional README (like open-source projects)**
