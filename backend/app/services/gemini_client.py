@@ -19,9 +19,6 @@ class GeminiClient:
             if key and key not in self.keys and key != "your_key":
                 self.keys.append(key)
 
-        if not self.keys:
-            raise ValueError("No valid Gemini API keys found")
-
         self.current_index = 0
         self.model = "gemini-2.0-flash"
         self.base_url = f"https://generativelanguage.googleapis.com/v1beta/models/{self.model}:generateContent"
@@ -33,6 +30,9 @@ class GeminiClient:
         self.current_index = (self.current_index + 1) % len(self.keys)
 
     async def generate(self, prompt: str, image_base64: str | None = None) -> str:
+        if not self.keys:
+            raise HTTPException(status_code=500, detail="No valid Gemini API keys found")
+
         last_error = None
 
         for attempt in range(len(self.keys)):
