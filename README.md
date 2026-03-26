@@ -5,36 +5,6 @@ It provides multilingual chatbot support, crop-disease help, authentication flow
 
 This README has been updated to capture what has been completed so far, including the recent conversation work, key code changes, and commits.
 
-## A to Z Progress Snapshot
-
-- Authentication flow hardened with login-first protected routing.
-- Browser speech features added for chatbot input and output.
-- Chatbot moved to Groq-based text generation with key rotation support.
-- Crop disease pipeline integrated with vision model flow and service updates.
-- Dashboard home greeting added as one-time browser TTS after login.
-- Error-handling and compatibility fixes applied across backend tests and frontend pages.
-- Feature branch `feature1` updated with multiple commits and push confirmations.
-- Global language-selection flow enforced for new users before profile setup.
-- Home and chatbot UX behavior aligned for multilingual voice and text behavior.
-- Integration routes/services expanded in backend for voice features.
-- JSON/config and router wiring updated in backend app config/routes.
-- Key recent milestones validated by local frontend dev run.
-- Login greeting now uses browser TTS (no external voice API key required).
-- Model fallback and key-rotation improvements landed in earlier feature commits.
-- Navigation and auth callback paths updated to match new feature flows.
-- Output voice toggle implemented in chatbot with persistent preference.
-- Prompt-driven improvements from this conversation fully applied.
-- Quality checks run at editor/diagnostic level on modified frontend files.
-- Route package registration updated to expose new feature endpoints.
-- Speech recognition path now captures microphone input and auto-sends message.
-- Tests adjusted where needed for crop-disease service behavior.
-- UI-level voice controls improved with listening state and clearer toggles.
-- Voice service files introduced on backend feature branch.
-- Web Speech API used for microphone input and text-to-speech output fallback.
-- eXisting README modernized to reflect current full-stack status.
-- Yet-to-do items remain around full manual cross-browser verification.
-- Zero API-key dependency for browser speech I/O in frontend flow.
-
 ## Recent Work Completed In This Conversation
 
 ### 1) Commit pending feature changes first (requested by user)
@@ -131,6 +101,36 @@ npm run dev
 2. Open chatbot, click mic, speak, and confirm text appears and sends.
 3. Keep Voice ON and confirm bot replies are spoken aloud.
 4. Repeat once with Voice OFF to confirm no speech playback.
+
+## A to Z Progress Snapshot
+
+- Authentication flow hardened with login-first protected routing.
+- Browser speech features added for chatbot input and output.
+- Chatbot moved to Groq-based text generation with key rotation support.
+- Crop disease pipeline integrated with vision model flow and service updates.
+- Dashboard home greeting added as one-time browser TTS after login.
+- Error-handling and compatibility fixes applied across backend tests and frontend pages.
+- Feature branch `feature1` updated with multiple commits and push confirmations.
+- Global language-selection flow enforced for new users before profile setup.
+- Home and chatbot UX behavior aligned for multilingual voice and text behavior.
+- Integration routes/services expanded in backend for voice features.
+- JSON/config and router wiring updated in backend app config/routes.
+- Key recent milestones validated by local frontend dev run.
+- Login greeting now uses browser TTS (no external voice API key required).
+- Model fallback and key-rotation improvements landed in earlier feature commits.
+- Navigation and auth callback paths updated to match new feature flows.
+- Output voice toggle implemented in chatbot with persistent preference.
+- Prompt-driven improvements from this conversation fully applied.
+- Quality checks run at editor/diagnostic level on modified frontend files.
+- Route package registration updated to expose new feature endpoints.
+- Speech recognition path now captures microphone input and auto-sends message.
+- Tests adjusted where needed for crop-disease service behavior.
+- UI-level voice controls improved with listening state and clearer toggles.
+- Voice service files introduced on backend feature branch.
+- Web Speech API used for microphone input and text-to-speech output fallback.
+- eXisting README modernized to reflect current full-stack status.
+- Yet-to-do items remain around full manual cross-browser verification.
+- Zero API-key dependency for browser speech I/O in frontend flow.
 
 ## Repository Layout (High Level)
 
